@@ -1,0 +1,1279 @@
+body {
+	margin: 0;
+}
+
+.wrapper {
+	font-family: GothamProRegular, Helvetica;
+	margin: 0 auto;
+	width: 88%;
+}
+
+.header {
+	padding-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+.header-navbar, .header-actions {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.header__menu {
+	position: relative;
+}
+
+.menu__item {
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 30px;
+	color: #000;
+	font: bold 12px/12px GothamProBold, Helvetica;
+}
+
+.header__logo {
+	background: no-repeat url(image/logo.png);
+/*	background-size: auto;*/
+	width: 55px;
+	height: 55px;
+	margin-right: 45px;
+}
+
+.search {
+	outline: none;
+	border: none;
+	width: 171px;
+	border-bottom: 2px solid #000;
+	position: relative;
+	margin-right: 36px;
+}
+
+.header-actions::after {
+	content: "";
+	width: 13.5px;
+	height: 14px;
+	position: absolute;
+	left: 162px;
+	background-image: url(image/seach.svg);
+}
+
+.header-actions > .header__menu > .menu__item:last-child {
+	margin-right: 55px;
+}
+
+.header-actions > .header__menu > .menu__item:last-child::after {
+	content: "1";
+	width: 14px;
+	height: 14px;
+	color: white;
+	position: absolute;
+	right: 35px;
+	top: 2px;
+	text-align: center;
+	display: inline-block;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+.header__language {
+	width: 20px;
+	height: 20px;
+	background: no-repeat url(image/flag.svg);
+}
+
+.hamburger-menu {
+	display: none;
+}
+
+.infoblock {
+	background: no-repeat url(image/man.jpg);
+	height: 280px;
+	background-size: 100% 100%;
+	margin-bottom: 53px;
+	padding-left: 60px;
+}
+
+.infoblock__title {
+	width: 19%;
+	padding: 90px 0 0 0;
+	margin: 0 0 14px 0;
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 30px/28px GothamProBold, Helvetica;
+}
+
+.infoblock__subtitle {
+	text-decoration: none;
+	color: #fff;
+	position: relative;
+	text-transform: uppercase;
+	font: bold 12px/11.5px GothamProBold, Helvetica;
+}
+
+.infoblock__subtitle::after {
+	content: "";
+	width: 45px;
+	height: 8px;
+	position: absolute;
+	top: 2px;
+	left: 75px;
+	background-image: url(image/Arrow.svg);
+}
+
+.products__title, .news__title {
+	text-align: center;
+	text-transform: uppercase;
+	font: bold 22px/21px GothamProBold, Helvetica;
+	margin: 0 0 15px 0;
+}
+
+.products {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 32px;
+}
+
+.product {
+	padding: 0 12px;
+}
+
+.product__boots {
+	padding: 0 7px 0 11px;
+	margin-bottom: 28px;
+}
+
+.product__name {
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	margin: 0 0 7px 0;	
+}
+
+.product__price-color {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+
+.product__price {
+	font: bold 14px/13px GothamProBold, Helvetica;
+	margin: 0;
+}
+
+.line {
+	width: 1px;
+	height: 115px;
+	background-color: #9c9c9c;
+	margin-top: 30px;	
+}
+
+.colors {
+	display: flex;
+}
+
+.product__color {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #c4c4c4;
+	margin-right: 7px;
+}
+.product__color:last-child {
+margin-right: 0;
+}
+.product__color:hover {
+transform: scale(1.2, 1.2)
+}
+
+.yellow {
+	background-color: #fdb431;	
+}
+
+.purple {
+	background-color: #b62e3c;
+}
+
+.blue {
+	background-color: #257da9;
+}
+
+.darkblue {
+	background-color: #41479b;
+}
+
+.darkred {
+	background-color: #762e31;
+}
+
+.darkgrey {
+	background-color: #0e1211;
+}
+.corporeal {
+	background-color: #e29d69;
+}
+
+.infoblock_black {
+	box-sizing: border-box;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 495px;
+	padding: 66px 33px;
+	margin-bottom: 80px;
+}
+
+.infoblock__video {
+	width: 68%;
+	max-width: 896px;
+	margin-right: 42px;
+}
+
+.article {
+	width: 29%;
+	padding-right: 16px;
+}
+
+.article__title {
+	color: #fff;
+	text-transform: uppercase;
+	font: bold 22px/28px GothamProBold, Helvetica;
+	margin: 0;
+}
+
+.article__descriplion {
+	color: #fff;
+	font: normal 14px/18px GothamProRegular, Helvetica;
+	margin-bottom: 16px;
+}
+
+.article > .infoblock__subtitle::after {
+	left: 93px;
+}
+
+.black {
+	color: #000;
+}
+
+.news__title {
+	margin-bottom: 40px;
+}
+
+.news {
+	display: flex;
+	justify-content: space-between;
+}
+
+.news__story {
+	margin-right: 55px;
+	width: 30%;
+}
+
+.news__story:last-child {
+	margin-right: 0;
+}
+
+.news__story__foto {
+	margin-bottom: 29px;
+	width: 100%;
+}
+
+.news__story__title {
+	font: bold 18px/17px GothamProBold, Helvetica;
+	margin: 0 0 10px 0;
+}
+
+.news__story > .article__descriplion {
+	margin: 0 0 16px 0;
+}
+
+.news__story > .news__story__footer > .infoblock__subtitle::after {
+	background-image: url(image/Arrowblack.svg);
+	width: 30px;
+	left: 90px;
+}
+
+.news__story__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 78px;
+}
+
+.news__story_data {
+	margin: 0;
+	color: #9c9c9c;
+	font: bold 12px/11px GothamProBold, Helvetica;
+}
+
+.hashtag {
+	text-align: right;
+	color: #9c9c9c;
+	text-transform: uppercase;
+}
+
+.photo-collage {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+.photo-collage__image {
+	display: inline;
+	font-size: 0;
+}
+
+.photo-collage__photo {
+	width: 147px;
+}
+
+.eight-photo {display: none;}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	background: #000;
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	color: #fff;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+
+.footer__menu {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__menu:first-child {
+	margin-right: 115px;
+}
+
+.footer__menu:nth-child(2) {
+	margin-right: 73px;
+}
+
+.footer__menu:nth-child(3) {
+	margin-right: 85px;
+}
+
+.footer__menu_name {
+	font-weight: bold;
+}
+
+.footer__menu__item {
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+
+.footer__menu:last-child > .footer__menu_name {
+	margin-bottom: 8px;
+}
+
+.sale {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 12px;
+}
+
+.contacts-btn {
+	width: 136px;
+	height: 30px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	color: #fff;
+	padding-left: 10px;
+	margin-bottom: 32px;
+}
+
+.contacts__social-networking__item {
+	margin-right: 23px;
+}
+
+.footer-center {
+	background-color: #000;
+	text-align: center;
+	font: normal 12px/11px GothamProRegular, Helvetica;
+	color: #fff;
+	margin: 0;
+}
+
+@media(max-width: 1024px) {
+	.wrapper {
+		width: 91%;
+	}
+
+	.header {
+		margin-bottom: 41px
+	}
+
+	.header__logo {
+	margin-right: 37px;
+	}
+
+	.header-actions > .header__menu > .menu__item:last-child {
+		margin-right: 43px;
+	}
+
+	.header-actions > .header__menu > .menu__item:last-child::after {
+		right: 26px;
+	}
+
+	.search {
+		width: 154px;
+		margin-right: 31px;
+	}
+	
+	.header-actions::after {
+		left: 146px;
+	}
+
+	.header-actions > .header__menu > .menu__item:first-child {
+		margin-right: 25px;
+	}
+
+	.infoblock {
+		padding-left: 55px;
+		height: 268px;
+		background-size: contain;
+	}
+
+	.infoblock__title {
+		padding: 78px 0 0 0;
+		margin-bottom: 8px;
+	}
+
+	.infoblock__subtitle::after {
+	  top: 3px;
+    left: 85px;
+	}
+
+	.product__boots {
+		width: 86%;
+		padding-right: 0;
+		margin-bottom: 35px;
+	}
+
+	.product {
+		padding-right: 0;
+	}
+
+	.products__title {
+		margin: 0 0 22px 0;
+	}
+
+	.product__price-color {
+		margin-right: 10px;
+	}
+
+	.products {
+		margin-bottom: 59px;
+	}
+
+	.infoblock_black {
+		height: 444px;
+		padding: 66px 33px;
+		margin-bottom: 92px;
+	}
+
+	.infoblock__video {
+    width: 66.5%;
+    margin-right: 40px;
+	}
+
+	.article {
+    padding-right: 0;
+	}
+
+	.article__descriplion {
+    font: normal 13px/17px GothamProRegular, Helvetica;
+    margin: 7px 0 11px 0;
+	}
+
+	.article > .infoblock__subtitle::after {
+		left: 99px;
+		top: 2px;
+	}
+
+	.news__story {
+    margin-right: 49px;
+    margin-bottom: 30px;
+	}
+
+	.news__title {
+    margin-bottom: 43px;
+	}
+
+	.news__story__foto {
+		height: 37%;
+	}
+
+	.news__story > .article__descriplion {
+    margin: 0 0 20px 0;
+	}
+
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+    left: 82px;
+	}
+
+	.news__story__title {
+		margin: 0 0 8px 0;
+	}
+
+	.photo-collage {
+		margin-bottom: 92px;
+	}
+
+	.photo-collage__photo {
+		width: 133px;
+	}
+}
+
+@media(max-width: 768px) {
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.header__logo {
+		background: no-repeat url(image/Axion.svg);
+		background-size: cover;
+		margin: 9px 0 0 43px;
+		width: 157px;
+		height: 33px;
+	}
+
+	.header {
+    margin-bottom: 39px;
+  }
+
+	.hamburger-menu {
+		display: block;
+	}
+
+	#menu__toggle {
+ 	 opacity: 0;
+	}
+
+	.menu__btn {
+  	display: flex;
+  	align-items: center;
+  	position: fixed;
+    top: 43px;
+    right: 44px;
+    width: 61px;
+    height: 17px;
+ 	 	cursor: pointer;
+  	z-index: 2;
+	}
+
+	.menu__btn > span,
+	.menu__btn > span::after {
+  	display: block;
+  	position: absolute;
+  	width: 100%;
+  	height: 8px;
+  	background-color: #000;
+  	transition-duration: 0.25s;
+	}
+
+	.menu__btn > span::after {
+  	content: '';
+  	top: 15px;
+	}
+
+	.menu__box {
+  	display: flex;
+  	position: fixed;
+  	top: 0;
+  	visibility: hidden;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	align-items: center;
+  	width: 100%;
+  	height: 100%;
+  	margin: 0;
+  	padding: 176px 0;
+  	list-style: none;
+  	background-color: #fff;
+  	transition-duration: 0.25s;
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span {
+  	transform: rotate(45deg);
+	}
+
+	#menu__toggle:checked ~ .menu__btn > span::after {
+  	top: 0;
+  	transform: rotate(90deg);
+	}
+
+	#menu__toggle:checked ~ .menu__box {
+  	visibility: visible;
+  	left: 0;
+  	z-index: 1;
+	}
+
+	.menu__box__item {
+  	display: block;
+  	padding: 13px 24px;
+  	color: #333;
+  	font: 600 30px/34px 'Roboto', sans-serif;
+  	text-decoration: none;
+  	transition-duration: 0.25s;
+  	margin-right: 4px;
+  	letter-spacing: 0.1px;
+	}
+
+	.menu__box__item:hover {
+  	background-color: #cfd8dc;
+	}
+
+	.menu__box li:last-child .menu__box__item {
+  	margin-right: 7px;
+	}
+
+	.menu__box li:nth-child(-n+2) .menu__box__item {
+  	margin-right: 3px;
+	}
+
+	.menu__box__item:hover {
+  	background-color: #cfd8dc;
+	}
+
+	.infoblock {
+		background-image: url(image/man-planshet.png);
+	  height: 415px;
+	  margin-bottom: 53px;
+	  padding-left: 46px;
+	  margin-bottom: 65px;
+	}
+
+	.infoblock__title {
+    font: bold 48px/49px GothamProBold, Helvetica;
+    padding: 119px 0 0 0;
+    letter-spacing: 1.5px;
+    margin-bottom: 47px;
+	}
+
+	.infoblock__subtitle {
+			font: bold 20px/19px GothamProBold, Helvetica;
+	}
+
+	.infoblock__subtitle::after {
+    top: 8px;
+    left: 127px;
+    background-size: cover;
+    width: 71px;
+    height: 12px;
+	}
+
+	.products__title {
+    font: bold 30px/28px GothamProBold, Helvetica;
+    padding-right: 14px;
+    margin-bottom: 33px;
+  }
+
+  .products {
+  	justify-content: center;
+  	margin-bottom: 14px;
+  }
+  
+  .products > .product:last-child, .product:nth-child(5), .line, .header__menu, .header-actions {
+  	display: none;
+  }
+
+  .product__boots {
+  	width: 233px;
+		height: 218px;
+		margin-bottom: 27px;
+		margin-right: 4px;
+  }
+
+  .product:first-child {
+  	margin-right: 87px;
+  	padding-left: 4px;
+  }
+
+  .product__name {
+    font: normal 20px/19px GothamProRegular, Helvetica;
+    margin: 0 0 18px 0;
+  }
+  
+  .product__price-color {
+    margin-right: 0;
+	}
+
+  .product__price {
+    font: bold 25px/24px GothamProBold, Helvetica;
+	}
+
+	.product__color {
+		width: 20px;
+		height: 20px;
+		margin-right: 3px;
+	}
+
+	.infoblock_black {
+		padding: 0;
+		margin: 0;
+		flex-direction: column-reverse;
+		justify-content: center;
+		height: auto;
+		background: linear-gradient(2.6deg, rgba(0,0,0,1) 93%, rgba(255,255,255,1) 94%);
+	}
+
+	.article {
+    width: 92%;
+    text-align: center;
+	}
+
+	.article__title {
+    font: bold 30px/37px GothamProBold, Helvetica;
+    padding-top: 100px;
+  }
+
+  .article__descriplion {
+    font: normal 20px/25px GothamProRegular, Helvetica;
+    margin: 15px 0 30px 0;
+  }
+
+  .article > .infoblock__subtitle {
+  	display: none;
+  }
+
+  .infoblock__video {
+    width: 91%;
+    margin-right: 0;
+    padding-bottom: 104px;
+	}
+
+	.news__title {
+  	background-color: #000;
+   	font: bold 30px/28px GothamProBold, Helvetica;
+   	color: #fff;
+   	margin-bottom: 0;
+   	padding-bottom: 45px;
+	}
+
+	.news {
+		justify-content: center;
+		background-color: #000;
+	}
+
+	.news__story {
+    width: 40.8%;
+  	margin-right: 53px;
+	}
+
+	.news > .news__story:last-child {
+		display: none;
+	}
+
+	.news__story__foto {
+		height: 30.7%;
+		margin-bottom: 26px;
+	}
+
+	.news__story:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.news__story__title {
+		color: #fff;
+    font: bold 25px/24px GothamProBold, Helvetica;
+	}
+
+	.news__story > .article__descriplion {
+    margin: 0 0 39px 0;
+  }
+
+	.news__story__footer {
+    align-items: center;
+	}
+
+  .news__story_data {
+  	color: #fff;
+    font: bold 15px/14.36px GothamProBold, Helvetica;
+	}
+
+	.news__story:first-child > .news__story__footer > .news__story_data {
+    margin-right: -17px;
+	}
+
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+		background-image: url(image/Arrow-planshet.svg);
+    width: 47px;
+    height: 14px;
+    left: 154px;
+    top: 3px;
+	}
+
+	.black {
+		color: #fff;
+	}
+
+	.hashtag {
+		background-color: #000;
+		margin-bottom: 0;
+		font: bold 28px/30px GothamProBold, Helvetica;
+		padding: 36px 45px 13px 0;
+    letter-spacing: 1.3px;
+	}
+
+	.photo-collage {
+		background: linear-gradient(2.6deg, rgba(255,255,255,1) 61%, rgba(0,0,0,1) 62%);
+		margin-bottom: 124px;
+	}
+
+	.photo-collage__photo {
+		width: 170px;
+	}
+
+  .eight-photo {display: block;}
+
+  .footer {
+  	padding: 46px 0 68px 0;
+	}
+
+	.footer__menu:first-child {
+		margin-right: 59px;
+    padding-left: 10px;
+	}
+
+	.footer__menu:nth-child(2) {
+		margin-right: 63px;
+	}
+
+	.footer__menu:nth-child(3) {
+		margin-right: 68px;
+	}
+	
+  .footer__menu:last-child {
+  	width: 156px;
+  }
+
+  .footer__menu_name {
+    margin-bottom: 10px;
+  }
+
+	.sale {
+		letter-spacing: 1.1px;
+	}
+
+	.footer__menu__item {
+    padding-bottom: 8px;
+	}
+
+	.contacts__social-networking__item {
+		margin-right: 15px;
+	}
+
+	.contacts-btn {
+    width: 143px;
+    height: 26px;
+    padding-left: 6px;
+    margin-bottom: 27px;
+	}
+
+	.footer-center {
+		padding-bottom: 37px;
+	}
+}
+
+@media(max-width: 610px) {
+	.infoblock {
+		background-size: 100% 100%;
+		height: 260px;
+	}
+
+	.infoblock__title {
+    font: bold 30px/32px GothamProBold, Helvetica;
+    margin-bottom: 14px;
+    padding: 66px 0 0 0;
+	}
+
+	.infoblock__subtitle {
+    font: bold 15px/19px GothamProBold, Helvetica;
+	}
+
+	.product__boots {
+    width: 90%;
+    height: auto;
+   }
+
+	.footer__menu:first-child, .footer__menu:nth-child(2), .footer__menu:nth-child(3), .product:first-child {
+		margin-right: 4%;
+	}
+
+	.footer__menu:last-child {
+    width: 109px;
+	}
+	.contacts-btn {
+    width: 80px;
+	}
+
+	.product__color {
+    width: 10px;
+    height: 10px;
+	}
+
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+		display: none;
+	}
+
+	.contacts__social-networking__item {
+    margin-right: 4px;
+	}
+}
+
+
+@media(max-width: 376px) {
+
+	.header {
+    padding-top: 24px;
+    margin-bottom: 26px;
+  }
+
+	.header__logo {
+    margin: 0 0 0 47px;
+    width: 104px;
+    height: 22px;
+	}
+
+	.menu__btn > span::after {
+    top: 11px;
+	}
+
+	.menu__btn {
+    top: 28px;
+    right: 47px;
+    width: 41px;
+    height: 4px;
+	}
+
+	.menu__btn > span, .menu__btn > span::after {
+    height: 6px;
+  }
+
+	.products > .product:nth-child(3) {
+	 	display: none;
+	}
+
+  .footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.infoblock {
+    background-image: url(image/man-mobile.png);
+    height: 191px;
+    padding-left: 48px;
+    margin-bottom: 38px;
+	}
+
+	.infoblock__title {
+    font: bold 20px/19.4px GothamProBold, Helvetica;
+    padding: 65px 0 0 0;
+    margin-bottom: 13px;
+    letter-spacing: 0;
+	}
+
+	.infoblock__subtitle {
+    font: bold 12px/11.5px GothamProBold, Helvetica;
+	}
+
+	.infoblock__subtitle::after {
+    width: 45.51px;
+    height: 9px;
+    top: 4px;
+    left: 78px;
+    background-image: url(image/Arrow-big375.svg);
+	}
+
+	.products__title {
+    font: bold 20px/19.14px GothamProBold, Helvetica;
+    padding-right: 11px;
+    margin-bottom: 0;
+  }
+
+	.product {
+		width: 268px;
+	}
+
+	.products {
+		align-items: center;
+		margin-bottom: 33px;
+	}
+
+	.product:first-child {
+    margin-right: 0;
+    padding-left: 15px;
+	}
+
+	.product__boots {
+    padding: 0 57px 0 46px;
+    margin-right: 0;
+		width: 62.7%;
+		height: auto;
+		margin-bottom: 22px;
+	}
+
+	.product__name {
+    font: normal 15px/14.37px GothamProRegular, Helvetica;
+    margin: 0 0 9px 0;
+  }
+
+  .product__price {
+    font: bold 20px/19.14px GothamProBold, Helvetica;
+	}
+
+	.product__color {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .article {
+    width: 75%;
+  }
+
+	.article__title {
+  	font: bold 20px/24.88px GothamProBold, Helvetica;
+  	padding-top: 61px;
+	}
+
+	.article__descriplion {
+  	font: normal 14px/18.2px GothamProRegular, Helvetica;
+  	margin-bottom: 28px;
+	}
+	
+	.infoblock__video {
+    width: 75.5%;
+    padding-bottom: 99px;
+	}
+
+	.news__title {
+    font: bold 20px/19px GothamProBold, Helvetica;
+    padding-bottom: 28px;
+	}
+
+	.news__story:nth-child(2) {
+		display: none;
+	}
+
+	.news__story {
+    width: 74%;
+    margin-right: 0;
+  }
+
+	.news__story__foto {
+    height: 37%;
+	}
+
+  .news__story__title {
+    font: bold 20px/19.14px GothamProBold, Helvetica;
+	}
+
+	.news__story_data {
+    font: bold 15px/14.3px GothamProRegular, Helvetica;
+	}
+
+	.news__story > .news__story__footer > .infoblock__subtitle::after {
+    display: block;
+    background-image: url(image/Arrow-news375.svg);
+		width: 38.9px;
+    height: 9px;
+    left: 96px;
+    top: 1px;
+	}
+
+	.news__story > .article__descriplion {
+    margin: 0 0 24px 0;
+	}
+
+	.news__story__footer {
+    margin-bottom: 55px;
+	}
+
+		.news__story:first-child > .news__story__footer > .news__story_data {
+    margin-right: 0;
+	}
+
+	.hashtag {
+    font: bold 24px/18px GothamProBold, Helvetica;
+    padding-right: 51px;
+    letter-spacing: 0.9px;
+  }  
+
+  .photo-collage__image:nth-child(4), .photo-collage__image:last-child {
+  	display: none;
+  }
+
+  .photo-collage__photo {
+    width: 140px;
+	}
+
+	.photo-collage__image:first-child, .photo-collage__image:nth-child(2), .photo-collage__image:nth-child(7), .photo-collage__image:nth-child(6) {
+		order: -1;
+	}
+
+	.photo-collage__image:nth-child(3) {
+		order: 1;
+	}
+
+	.photo-collage {
+    background: linear-gradient(2.6deg, rgba(255,255,255,1) 44%, rgba(0,0,0,1) 45%);
+    margin-bottom: 85px;
+	}
+
+	.footer__menu:first-child, .footer__menu:nth-child(2), .footer__menu:nth-child(3) {
+		margin: 0;
+		text-align: center;
+	}
+
+	.footer {
+    font: normal 15px/14.36px GothamProRegular, Helvetica;
+  	padding: 23px 0 27px 0;
+	}
+
+	.footer__menu:first-child {
+    padding-left: 0px;
+    order: -1;
+	}
+
+	.footer__menu:nth-child(2) {
+		order: 1;
+	}
+
+	.footer__menu:last-child {
+		order: 2;
+	}
+
+	.footer__menu__item {
+    padding-bottom: 9px;
+	}
+
+	.footer__menu:first-child .footer__menu_name {
+		margin-bottom: 9px;
+	}
+
+
+	.footer__menu > .footer__menu__item:last-child {
+		margin-bottom: 27px;
+	}
+
+	.footer__menu:nth-child(2) > .footer__menu__item {
+		padding-bottom: 6px;
+	}
+
+	.footer__menu:nth-child(2) > .footer__menu__item:last-child {
+		margin-bottom: 29px;
+	}
+
+	.footer__menu:nth-child(3) > .footer__menu__item {
+		padding-bottom: 6px;
+	}
+
+	.footer__menu:nth-child(3) > .footer__menu__item:last-child {
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+	}
+
+	.footer__menu:nth-child(2) > .footer__menu_name {
+		margin-bottom: 9px;
+	}
+
+	.footer__menu:last-child {
+    width: 177px;
+    padding-left: 3px;
+	}
+
+  .sale {
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 22px;
+  }
+
+  .footer__menu:last-child > .footer__menu_name {
+    margin-bottom: 13px;
+	}
+
+	.contacts-btn {
+    width: 151px;
+    height: 37px;
+    padding-left: 6px;
+    margin-bottom: 103px;
+    margin-left: 11px;
+    font: bold 12px/11.48px GothamProBold, Helvetica;
+    text-transform: uppercase;
+	}
+
+	.contacts__social-networking__item {
+		margin-right: 28px;
+	}
+
+	.contacts__social-networking__item:last-child {
+		margin-right: 0;
+	}
+
+	.footer__foto {
+    width: 12%;
+	}
+
+	.contacts__social-networking__item:first-child .footer__foto{
+		width: 5%;
+		padding-left: 3px;
+	}
+
+	.contacts__social-networking__item:last-child .footer__foto{
+		width: 10%;
+	}
+
+	.footer-center {
+    font: normal 13px/11px GothamProRegular, Helvetica;
+    padding-left: 3px;
+	}
+}
+
+@media(max-width: 320px) {
+
+	.header__logo {
+    margin-left: 20px;
+  }
+
+  .menu__btn {
+    right: 20px;
+	}
+
+	.infoblock {
+    background-image: url(image/man-planshet.png);
+    padding-left: 20px;
+    margin-bottom: 38px;
+    background-size: 100% 100%;
+	}
+
+	.article {
+    width: 88%;
+	}
+
+	.infoblock__video {
+    width: 88.5%;
+  }
+
+  .news__story {
+    width: 87%;
+  }
+
+  .hashtag {
+    padding-right: 24px;
+	}
+
+
+
+}
